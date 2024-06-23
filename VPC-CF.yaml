@@ -65,4 +65,4 @@ Resources:
           Value: "CFinstance"
       KeyName: ubuntu-key-pair
       NetworkInterfaces:
-        AssociatePublicIpAddress: true
+        - AssociatePublicIpAddress: true
