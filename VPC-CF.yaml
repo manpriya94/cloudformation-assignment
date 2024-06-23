@@ -66,3 +66,4 @@ Resources:
       KeyName: ubuntu-key-pair
       NetworkInterfaces:
         - AssociatePublicIpAddress: true
+          DeviceIndex: "0"
