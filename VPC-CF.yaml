@@ -53,3 +53,16 @@ Resources:
     Properties:
       SubnetId: !Ref MySubnet
       RouteTableId: !Ref PublicRouteTable
+
+MyInstance:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      InstanceType: 't2.micro'
+      ImageId: ami-08a0d1e16fc3f61ea
+      SubnetId: !Ref MySubnet
+      Tags:
+        - Key: Name
+          Value: "CFinstance"
+      KeyName: ubuntu-key-pair
+      NetworkInterfaces:
+        AssociatePublicIpAddress: true
