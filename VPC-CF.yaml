@@ -54,7 +54,7 @@ Resources:
       SubnetId: !Ref MySubnet
       RouteTableId: !Ref PublicRouteTable
 
-MyInstance:
+  MyInstance:
     Type: 'AWS::EC2::Instance'
     Properties:
       InstanceType: 't2.micro'
