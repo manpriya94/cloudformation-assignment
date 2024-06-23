@@ -64,6 +64,4 @@ Resources:
         - Key: Name
           Value: "CFinstance"
       KeyName: ubuntu-key-pair
-      NetworkInterfaces:
-        - AssociatePublicIpAddress: true
-          DeviceIndex: "0"
+
