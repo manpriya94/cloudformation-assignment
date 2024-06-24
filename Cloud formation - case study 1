@@ -191,7 +191,6 @@ Resources:
             MasterUsername: !Ref MasterUsername
             MasterUserPassword: !Ref MasterUserPassword
             MultiAZ: false
-            EngineVersion: 8.0.28
             AutoMinorVersionUpgrade: true
             PubliclyAccessible: false
             StorageType: gp2
