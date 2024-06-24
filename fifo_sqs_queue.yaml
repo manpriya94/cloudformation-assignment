@@ -1,0 +1,19 @@
+Resources:
+  MyFifoQueue:
+    Type: 'AWS::SQS::Queue'
+    Properties:
+      QueueName: 'MyFifoQueue.fifo'
+      FifoQueue: true
+      ContentBasedDeduplication: true
+      Tags:
+        - Key: Name
+          Value: 'MyFifoQueue'
+
+Outputs:
+  QueueURL:
+    Description: The URL of the created SQS queue
+    Value: !Ref MyFifoQueue
+
+  QueueARN:
+    Description: The ARN of the created SQS queue
+    Value: !GetAtt MyFifoQueue.Arn
